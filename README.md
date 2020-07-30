@@ -1,12 +1,14 @@
-## a simple supermarket cashier systems , create by SSM framework ~
+## :moneybag:a simple supermarket cashier systems , create by SSM framework ~
 **项目概述**  
 cs_sys是一个基于SSM & Layui前端框架实现的模拟超市收银系统。  
 
 **开发环境** 
-|Column 1  | Column 2  | Column 3  |
-|:----------|:----------|:----------|
-| Cell 1    | Cell 2    | Cell 3    |
-| Cell 1    | Cell 2    | Cell 3    |
+|工具  | 版本  |
+|:----------|:----------|
+| OS    | MacOS   |
+| JDK    | 1.8    |
+| IDE    | IntelliJ IDEA    |
+| MySQL    |     |
 
   
 **功能模块**  
