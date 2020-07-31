@@ -51,9 +51,6 @@
 
 ![avatar](https://github.com/pweibiao/cs_sys/blob/master/sys_pictures/sys_construct.png)  
 
-**系统目录**  
-![avatar](https://github.com/pweibiao/cs_sys/blob/master/sys_pictures/sys_mulu.png)  
-
 
 **功能模块**  
 - 登陆模块    
@@ -69,4 +66,5 @@
 ![avatar](https://github.com/pweibiao/cs_sys/blob/master/sys_pictures/sys_%20accounting%202.png)  
 ![avatar](https://github.com/pweibiao/cs_sys/blob/master/sys_pictures/sys_%20accounting1.png)
 - 管理模块  
-![avatar](https://github.com/pweibiao/cs_sys/blob/master/sys_pictures/sys_admin.png)
+![avatar](https://github.com/pweibiao/cs_sys/blob/master/sys_pictures/sys_admin.png)  
+[系统目录](https://github.com/pweibiao/cs_sys/blob/master/sys_pictures/sys_mulu.png)
