@@ -49,6 +49,7 @@
 
 **系统架构**  
 
+![avatar](https://github.com/pweibiao/cs_sys/blob/master/sys_pictures/sys_construct.png)
 
 **功能模块**  
 - 登陆模块    
