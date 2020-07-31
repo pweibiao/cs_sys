@@ -49,7 +49,11 @@
 
 **系统架构**  
 
-![avatar](https://github.com/pweibiao/cs_sys/blob/master/sys_pictures/sys_construct.png)
+![avatar](https://github.com/pweibiao/cs_sys/blob/master/sys_pictures/sys_construct.png)  
+
+**系统目录**  
+![avatar](https://github.com/pweibiao/cs_sys/blob/master/sys_pictures/sys_mulu.png)  
+
 
 **功能模块**  
 - 登陆模块    
