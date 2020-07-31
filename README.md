@@ -17,9 +17,7 @@
   
 
 **系统功能**  
-&emsp;&emsp;对于用户需求的理解，是信息、系统设计十分重要的环节，对于交互系统的构建
-成功极其重要。系统包括 5 大功能模块：登录模块，商品模块，交易订单模块，财务
-模块，系统模块。  
+  
 &emsp;（1）登录模块：  
 &emsp;&emsp;系统启动后的首页，是系统的入口，对登陆人员的身份识别，需要输入相关信息
 进行验证识别。  
@@ -47,7 +45,9 @@
 &emsp;系统管理员身份登陆后，对所有人员信息进行查询和删除功能，可以对商品信息
 进行添加修改和查询，可以进行相关收银操作，可对商品进行翻阅查询，并可打印相
 关交易订单信息和商品信息。  
-![avatar](https://github.com/pweibiao/cs_sys/blob/master/sys_pictures/sys_login.png)
+![avatar](https://github.com/pweibiao/cs_sys/blob/master/sys_pictures/sys_flowChart.png)
+
+**系统架构**  
 
 
 **功能模块**  
