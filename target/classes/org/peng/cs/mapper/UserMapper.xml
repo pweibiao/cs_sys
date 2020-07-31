@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.peng.cs.mapper.UserMapper">
+
+    <sql id="table_name">
+        cs_user
+    </sql>
+
+    <resultMap type="org.peng.cs.domain.User" id="userResultMap" >
+        <id property="id" column="user_id"/>
+        <result property="name" column="user_name"/>
+        <result property="password" column="user_password"/>
+        <result property="dept" column="user_dept"/>
+    </resultMap>
+    
+    <insert id="insertUser" parameterType="org.peng.cs.domain.User" useGeneratedKeys="true">
+        insert into <include refid="table_name"/>(user_name,user_password,user_dept)
+        values(#{name},#{password},#{dept})
+    </insert>
+
+    <delete id="deleteUserByName" parameterType="Integer">
+        delete from <include refid="table_name"/> where user_id = #{id}
+    </delete>
+
+    <update id="updateUserById" parameterType="org.peng.cs.domain.User">
+        update <include refid="table_name"/> set
+            user_name = #{name},
+            user_password = #{password},
+            user_dept = #{dept}
+        where user_id = #{id}
+    </update>
+
+    <select id="findUserById" parameterType="Integer" resultType="org.peng.cs.domain.User" resultMap="userResultMap">
+        select*from <include refid="table_name"/> where user_id = #{id}
+    </select>
+
+    <select id="selectAllUser" resultType="org.peng.cs.domain.User" resultMap="userResultMap">
+        select * from <include refid="table_name"/>
+    </select>
+
+    <select id="findUserByName" parameterType="String" resultType="org.peng.cs.domain.User" resultMap="userResultMap">
+        select * from <include refid="table_name"/> where user_name = #{name}
+    </select>
+
+    <select id="selectAllCount" resultType="Integer">
+        select count(1) from <include refid="table_name"/>
+    </select>
+    
+</mapper>
