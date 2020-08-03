@@ -3,24 +3,25 @@ package org.peng.cs.domain;
 import java.io.Serializable;
 
 public class User implements Serializable {
-
+    /**
+     * 用户唯一ID
+     */
     private Integer id;
+    /**
+     * 用户名
+     */
     private String name;
+    /**
+     * 密码
+     */
     private String password;
+    /**
+     * 部门（用户权限）
+     */
     private String dept;
-
-
-
     public User() {
     }
 
-    /**
-     * 用户
-     * @param id 用户id
-     * @param name 用户名
-     * @param password 密码
-     * @param dept 部门
-     */
     public User(Integer id, String name, String password, String dept) {
         this.id = id;
         this.name = name;

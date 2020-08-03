@@ -3,11 +3,21 @@ package org.peng.cs.domain;
 import java.io.Serializable;
 
 public class OrderItem implements Serializable {
-
-    private Integer itemId; //id
-    private Integer quantity; //数量
-    private Double total; //小计
-
+    /**
+     * 唯一ID
+     */
+    private Integer itemId;
+    /**
+     * 对应商品总数
+     */
+    private Integer quantity;
+    /**
+     * 商品条目总价
+     */
+    private Double total;
+    /**
+     * 商品ID
+     */
     private String goodsId;
 
     public String getGoodsId() {

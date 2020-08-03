@@ -5,11 +5,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Order implements Serializable {
-
+    /**
+     * 订单编号
+     */
     private Integer id;
+    /**
+     * 订单创建时间
+     */
     private String orderTime;
+    /**
+     * 用户ID
+     */
     private Integer userId;
+    /**
+     * 订单总价
+     */
     private Double total;
+    /**
+     * 用户账号
+     */
     private String username;
 
     @Override

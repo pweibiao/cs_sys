@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.peng.cs.mapper.GoodsMapper">
+
+    <sql id="table_name">
+        cs_goods
+    </sql>
+
+
+    <resultMap type="org.peng.cs.domain.Goods" id="GoodsResultMap" >
+        <id property="id" column="goods_id"/>
+        <result property="name" column="goods_name"/>
+        <result property="inventory" column="goods_inventory"/>
+        <result property="price" column="goods_price"/>
+    </resultMap>
+    
+    <insert id="insertGoods" parameterType="Goods" useGeneratedKeys="true">
+        insert into <include refid="table_name"/>(goods_name,goods_inventory,goods_price)
+        values(#{name},#{inventory},#{price})
+    </insert>
+
+    <delete id="deleteGoodsById" parameterType="Integer">
+        delete from <include refid="table_name"/> where goods_id = #{id}
+    </delete>
+
+    <update id="updateGoodsById" parameterType="Goods">
+        update <include refid="table_name"/> set
+            goods_name = #{name},
+            goods_inventory = #{inventory},
+            goods_price = #{price}
+        where goods_id = #{id}
+    </update>
+
+    <select id="findGoodsById" parameterType="Integer" resultType="Goods" resultMap="GoodsResultMap">
+        select*from <include refid="table_name"/> where goods_id = #{id}
+    </select>
+
+    <select id="selectAllGoods" resultType="Goods" resultMap="GoodsResultMap">
+        select * from <include refid="table_name"/>
+    </select>
+
+    <select id="selectCountGoods" resultType="Integer" >
+        select count(1) from <include refid="table_name"/>
+    </select>
+
+    
+</mapper>

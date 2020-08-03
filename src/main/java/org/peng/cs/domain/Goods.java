@@ -3,10 +3,21 @@ package org.peng.cs.domain;
 import java.io.Serializable;
 
 public class Goods implements Serializable {
+    /**
+     * 商品id
+     */
     private Integer id;
-
+    /**
+     * 商品名称
+     */
     private String name;
+    /**
+     * 商品库存
+     */
     private Integer inventory;
+    /**
+     * 商品价格
+     */
     private Double price;
 
     @Override
@@ -22,13 +33,6 @@ public class Goods implements Serializable {
     public Goods() {
     }
 
-    /**
-     * 商品
-     * @param id 商品id
-     * @param name 商品名称
-     * @param inventory 商品库存
-     * @param price 商品价格
-     */
     public Goods(Integer id, String name, Integer inventory, Double price) {
         this.id = id;
         this.name = name;

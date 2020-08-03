@@ -9,10 +9,14 @@ import javax.servlet.http.HttpServletResponse;
 
 @Controller
 public class IndexController {
-
+    /**
+     * 拦截请求 显示主页
+     * @param request
+     * @param response
+     * @return
+     */
     @RequestMapping("/")
     public ModelAndView GoToIndex(HttpServletRequest request, HttpServletResponse response){
-
         return new ModelAndView("index");
     }
 
