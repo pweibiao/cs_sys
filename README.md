@@ -10,6 +10,11 @@
 | IDE    | IntelliJ IDEA    |
 | MySQL    | 8.0.18    |
 
+**技术栈**  
+前端：Layui、JSP、JQuery、AJAX...  
+后端：Spring、SpringMVC、Mybatis、PageHelper...
+
+
 **用户权限**  
 - 管理员：具有所有管理模块的权限
 - 经理：具有商品管理权限和订单管理权限
